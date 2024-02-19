@@ -1,0 +1,13 @@
+<html>
+	<header>
+		<script>
+function newLetter() {
+	const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	document.getElementById('letter').innerHTML = characters.charAt(Math.floor(Math.random() * characters.length));
+}
+		</script>
+	</header>
+	<body onclick="newLetter()">
+		<div id="letter" style="text-align: center;padding: 200px;font-size: 300px;color: darkred; font-family: arial; font-weight: bold;">A</div>
+	</body>
+</html>
